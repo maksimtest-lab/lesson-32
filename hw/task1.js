@@ -3,17 +3,17 @@ const button = document.getElementById('btn');
 
 function setTheme(theme) {
     document.body.className = theme;
-    localStorage.setItem('theme', theme);
+    sessionStorage.setItem('theme', theme);
 }
 
 function toggleTheme() {
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = sessionStorage.getItem('theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
 }
 
 function getTheme() {
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = sessionStorage.getItem('theme');
     if (currentTheme) {
         document.body.className = currentTheme;
     }
@@ -28,7 +28,7 @@ const buttonLang = document.getElementById('btn_lang');
 const defaultLang = 'ru';
 
 function setLang(lang) {
-    localStorage.setItem('lang', lang);
+    sessionStorage.setItem('lang', lang);
     const elements = document.querySelectorAll('[data-lang]');
 
     elements.forEach((element) => {
@@ -42,13 +42,13 @@ function setLang(lang) {
 }
 
 function toggleLang() {
-    const currentLang = localStorage.getItem('lang');
+    const currentLang = sessionStorage.getItem('lang');
     const newLang = currentLang === 'en' ? 'ru' : 'en';
     setLang(newLang);
 }
 
 function initLang() {
-    const currentLang = localStorage.getItem('lang') || defaultLang;
+    const currentLang = sessionStorage.getItem('lang') || defaultLang;
     setLang(currentLang);
 }
 
