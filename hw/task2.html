@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 32 - Homework from InnoDOM - Task 2</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+            }
+
+            input {
+                padding: 3px 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Задание 2</h1>
+
+    <p>
+        Создайте HTML-форму, содержащую несколько полей ввода (например, имя, электронная почта). Реализуйте сохранение введенных данных в <em>localStorage</em>, чтобы они сохранялись даже после перезагрузки страницы.
+    </p>
+
+
+    <form action="">
+        <div class="form-group">
+            <label for="name">Введите имя</label>
+            <input type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label for="age">Введите возраст</label>
+            <input type="number" id="age">
+        </div>
+        <div class="form-group">
+            <label for="email">Введите Email</label>
+            <input type="text" id="email">
+        </div>
+    </form>
+
+    <script src="./task2.js"></script>
+</body>
+</html>
