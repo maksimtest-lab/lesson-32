@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 32 - Homework from InnoDOM - Task 3</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./task3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Задание 3</h1>
+
+    <p>
+        Создайте простой интернет-магазин с несколькими товарами. Реализуйте функциональность добавления товаров в корзину и оформления заказа. При оформлении заказа симулируйте отправку данных на сервер (например, с помощью fetch), и обработку разных кодов ответа сервера.
+    </p>
+
+    <h3>Товары</h3>
+    <div class="product-list"></div>
+
+    <h3>Корзина</h3>
+    <div class="shop-cart"></div>
+
+    <h3>Оформить заказ</h3>
+
+    <form action="." method="post" id="order_form">
+        <div class="form-group">
+            <label for="name">Введите имя</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Введите Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Введите примечание</label>
+            <textarea id="message"></textarea>
+        </div>
+        <button type="submit">Заказать</button>
+    </form>
+
+    <script src="./task3.js"></script>
+</body>
+</html>
